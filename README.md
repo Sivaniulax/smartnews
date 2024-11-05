@@ -1,28 +1,28 @@
 # smartnews
-#video link :  https://drive.google.com/file/d/1nWmLjRLRCDJMRJAkfGdrWP12d8dIaLZt/view?usp=sharing 
+video link :  https://drive.google.com/file/d/1nWmLjRLRCDJMRJAkfGdrWP12d8dIaLZt/view?usp=sharing 
 Smart News Project Documentation
 (Smart News: Automated News Collection, Summarization, and Retrieval)
 
-#Abstract
+Abstract
 The Smart News project is an automated system designed to collect news articles, summarize them, and provide a searchable interface for users. Using Python and various NLP libraries, the project collects news from a specified source (CNN), summarizes articles, and allows users to query and retrieve relevant articles. The project aims to streamline access to relevant news by summarizing and ranking content based on similarity to user queries.
 
 
-##Introduction
+Introduction
 In today’s digital era, vast amounts of news content are generated and distributed across multiple platforms every minute. While access to information has expanded dramatically, the sheer volume of news can be overwhelming, making it challenging for users to stay updated on specific topics of interest. Moreover, traditional news consumption methods often lack efficiency, requiring users to sift through multiple articles to identify relevant information. This results in both information overload and a significant time investment.
 
 The Smart News project addresses the challenge of information overload by providing an automated system to collect, summarize, and retrieve news articles from CNN in real time. Users can access concise summaries of news and perform search queries to quickly retrieve relevant content. The system is designed to streamline news consumption by regularly gathering articles, generating brief summaries, and ranking search results based on relevance, enabling users to stay informed without sifting through excessive information.
 
 
-##Problem Statement
+Problem Statement
 In the current digital age, news is generated at a high frequency from multiple sources. Users struggle to sift through vast amounts of content to find news articles relevant to their interests. The Smart News project addresses this problem by automating news collection, providing concise summaries, and implementing a query-based retrieval system to help users find and evaluate relevant information efficiently.
 
-##Data Collection
+Data Collection
 Source: News articles are collected from CNN using the newspaper3k library. This library allows web scraping and parsing of articles, saving them as text files in a structured format.
 Storage: The raw articles are saved in the data/ directory, and the summarized versions are saved in the summarized_data/ directory.
 Directory Management: The project uses a file management system to limit the number of stored files and ensure storage constraints are adhered to. When the directory exceeds the specified limit of 1000 files, older articles are deleted.
 
 
-##Dataset
+Dataset
 The dataset used in this project consists of news articles collected directly from CNN’s website. Each article includes:
 Title: The headline of the article.
 Content: Full textual content of the article.
@@ -30,7 +30,7 @@ URL: Link to the original article.
 Published Date: Date the article was published.
 
 
-##Methods Used
+Methods Used
 1. Article Collection and Storage
 Tool: newspaper3k library.
 Process: Articles are collected from CNN, parsed, and saved in the data/ directory. The collection is automated using APScheduler to ensure continuous updates at specified intervals.
@@ -50,7 +50,7 @@ Process: Precision, Recall, and F1-score are calculated based on the relevance o
 
 
 
-##Implementation Details
+Implementation Details
 Project Structure
 scheduler.py - Automates the news collection process using APScheduler to schedule the collection of news every 6 minutes.
 Main Function: scheduled_job(), which calls the collect_news() function to gather articles.
@@ -69,7 +69,7 @@ Document Retrieval: answer_query() ranks and retrieves the top-K documents based
 Evaluation: evaluate_model() calculates Precision, Recall, and F1-score to assess retrieval accuracy.
 
 
-##Model Evaluation and Results
+Model Evaluation and Results
 The model’s performance is evaluated based on how accurately it retrieves relevant articles for a given query using Precision, Recall, and F1-score.
 Precision: The fraction of relevant documents among the retrieved documents.
 Recall: The fraction of relevant documents that were successfully retrieved.
@@ -80,6 +80,6 @@ Cosine Similarity: Often produces the best results, as it captures the angle bet
 Euclidean and Manhattan: May offer alternative perspectives but often produce lower F1-scores compared to cosine similarity in this text-based retrieval task.
 
 
-##Conclusion
+Conclusion
 The Smart News project automates the collection, summarization, and retrieval of news articles, offering users a streamlined and interactive experience for staying informed on relevant topics. Through continuous improvement and expansion, this project has the potential to become a comprehensive tool for real-time news analysis and discovery.
 
