@@ -1,0 +1,5 @@
+Title: Intel is a security risk for China, says influential industry group
+Summary:
+“It is recommended that a network security review is initiated on the products Intel sells in China, so as to effectively safeguard China’s national security and the legitimate rights and interests of Chinese consumers,” CSAC said. Beijing Reuters —
+
+Intel products sold in China should be subject to a security review, the Cybersecurity Association of China (CSAC) said on Wednesday, alleging the US chipmaker has “constantly harmed” the country’s national security and interests. While CSAC is an industry group rather than a government body, it has close ties to the Chinese state and the raft of accusations against Intel (INTC), published in a long post on its official WeChat account, could trigger a security review from China’s powerful cyberspace regulator, the Cyberspace Administration of China (CAC).

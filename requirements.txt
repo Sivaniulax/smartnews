@@ -1,0 +1,16 @@
+newspaper3k
+nltk
+scikit-learn
+apscheduler
+lxml[html_clean]
+lxml_html_clean
+langid
+langchain google-cloud-aiplatform faiss-cpu
+langchain_community
+-U langchain-community
+google-generativeai
+unstructured
+langchain transformers sentence-transformers
+
+
+
